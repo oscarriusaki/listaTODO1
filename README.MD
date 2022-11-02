@@ -3,6 +3,11 @@
 1. Primeramente crear la base de datos y hacer funcionar en MYSQL
 2. Crear la base de datos y las tablas copiando desde el archivo "BaseDeDatos.txt"
 3. Clonar la carpeta
+
+```
+git clone https://github.com/oscarriusaki/listaTODO1.git
+```
+
 4. Con la terminal ingresar dentro de la carpeta clonada
 5. Para descargar los packetes en la terminal escribir
 
