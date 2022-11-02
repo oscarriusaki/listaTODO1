@@ -78,4 +78,5 @@ nodemon app
    ahora puede hacer pruebas de error o registrar otros usuarios, hacer login etc. con algun programa,
    recomendado POSTMAN u otro.
 
-8. Recomendar crear otro usuario para fines de prueba grasias.
+8. Recomendar crear otro usuario, no usar el usuario creado en el paso 2 grasias.
+9. Cualquier duda del codigo porfavor comunicarse con el desarollador BACKEND.
