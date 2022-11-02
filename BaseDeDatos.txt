@@ -1,28 +1,37 @@
-/* crear la base de datos */
-create database gestionar;
+*/ creando tabla usuario /*
 
-/* crear las tablas */
+create table usuario ( 
 
-create table usuario(
-	user_id int auto_increment,
-	name varchar(43) not null,
-	pass varchar(43) not null,
-	email varchar(43) not null unique,
-	date_time date not null,
-	constraint pk_user_id primary key (user_id)
+	id_usuario int auto_increment, 
+	nombre varchar(50) not null, 
+	pass text not null, 
+	token text not null, 
+	fecha date not null, 
+	estado int not null, 
+	constraint pk_id_usuario primary key (id_usuario) 
+
+);
+*/ insertar un registro /*
+
+insert into usuario (nombre, correo, pass, token, fecha, estado) values ("oscar", "oscar@gmail.com", "123", 1, "2022/29/10","1");
+
+// crear tabla tarea
+
+create table tarea (
+	
+    id_tarea int auto_increment not null,
+    titulo varchar(50) not null,
+    descripcion text not null,
+    fecha date not null, 
+    estado int not null,
+    finalizada int not null,
+    id_usuario int not null,
+    
+    constraint pk_id_tarea primary key (id_tarea),
+    constraint fk_id_usuario foreign key (id_usuario) references usuario(id_usuario)
+	
 );
 
-create table tarea ( 
-	id_tarea int auto_increment, 		
-	name varchar(100), 
-	description varchar(100), 
-	user_id int not null,
-	constraint pk_id_tarea primary key (id_tarea), 
-	constraint jk_id_usuario foreign key (user_id) references usuario(user_id) 
-);
+// insertando tarea
 
-/* Hacer algunos registros */
-/* para formato de la fecha es yy-my-dd */
-
-insert into usuario (name, email, pass, date_time) values ('oscar', 'oscar@gmail.com', '12345','2022/11/2');  
-insert into tarea (name, user_id, description) values ('tarea1', 1, 'base de datos');
+insert into tarea (titulo, descripcion, finalizada, id_usuario, estado, fecha) values ( "task1", "this is the first task", 1, 1, 1, "2022/10/29" )
