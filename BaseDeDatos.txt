@@ -31,8 +31,8 @@ create table tarea (
     constraint pk_id_tarea primary key (id_tarea),
     constraint fk_id_usuario foreign key (id_usuario) references usuario(id_usuario)
 	
-);
+); 
 
 /* insertando tarea */
 
-insert into tarea (titulo, descripcion, finalizada, id_usuario, estado, fecha) values ( "task1", "this is the first task", 1, 1, 1, "2022/10/29" )
+insert into tarea (titulo, descripcion, finalizada, id_usuario, estado, fecha) values ( "task1", "this is the first task", 1, 1, 1, "2022/10/29" );

@@ -4,7 +4,7 @@
 2. Crear la base de datos y las tablas copiando desde el archivo "BaseDeDatos.txt" o copear lo siguiente
 
 ```
-*/ creando tabla usuario /*
+/* creando tabla usuario */
 
 create table usuario (
 
@@ -17,11 +17,12 @@ create table usuario (
 	constraint pk_id_usuario primary key (id_usuario)
 
 );
-*/ insertar un registro /*
+
+/* insertar un registro */
 
 insert into usuario (nombre, correo, pass, token, fecha, estado) values ("oscar", "oscar@gmail.com", "123", 1, "2022/29/10","1");
 
-// crear tabla tarea
+/* crear tabla tarea */
 
 create table tarea (
 
@@ -38,9 +39,9 @@ create table tarea (
 
 );
 
-// insertando tarea
+/* insertando tarea */
 
-insert into tarea (titulo, descripcion, finalizada, id_usuario, estado, fecha) values ( "task1", "this is the first task", 1, 1, 1, "2022/10/29" );
+insert into tarea (titulo, descripcion, finalizada, id_usuario, estado, fecha) values ( "task1", "this is the first task", 1, 1, 1, "2022/10/29" )
 ```
 
 3. Clonar la carpeta
