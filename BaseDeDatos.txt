@@ -1,37 +1,43 @@
+
+/* creando base de datos */
+
+create database gestionar;
+
 /* creando tabla usuario */
 
-create table usuario ( 
+create table usuario (
 
-	id_usuario int auto_increment, 
-	nombre varchar(50) not null, 
-	pass text not null, 
-	token text not null, 
-	fecha date not null, 
-	estado int not null, 
-	constraint pk_id_usuario primary key (id_usuario) 
+	id_usuario int auto_increment,
+	nombre varchar(50) not null,
+	pass text not null,
+    correo text not null unique,
+	token text not null,
+	fecha date not null,
+	estado int not null,
+	constraint pk_id_usuario primary key (id_usuario)
 
 );
 
 /* insertar un registro */
 
-insert into usuario (nombre, correo, pass, token, fecha, estado) values ("oscar", "oscar@gmail.com", "123", 1, "2022/29/10","1");
+insert into usuario (nombre, correo, pass, token, fecha, estado) values ("oscar", "oscar@gmail.com", "123", 1, "2022/11/2","1");
 
 /* crear tabla tarea */
 
 create table tarea (
-	
+
     id_tarea int auto_increment not null,
     titulo varchar(50) not null,
     descripcion text not null,
-    fecha date not null, 
+    fecha date not null,
     estado int not null,
     finalizada int not null,
     id_usuario int not null,
-    
+
     constraint pk_id_tarea primary key (id_tarea),
     constraint fk_id_usuario foreign key (id_usuario) references usuario(id_usuario)
-	
-); 
+
+);
 
 /* insertando tarea */
 

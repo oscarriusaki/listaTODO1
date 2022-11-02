@@ -4,6 +4,11 @@
 2. Crear la base de datos y las tablas copiando desde el archivo "BaseDeDatos.txt" o copear lo siguiente
 
 ```
+
+/* creando base de datos */
+
+create database gestionar;
+
 /* creando tabla usuario */
 
 create table usuario (
@@ -11,6 +16,7 @@ create table usuario (
 	id_usuario int auto_increment,
 	nombre varchar(50) not null,
 	pass text not null,
+    correo text not null unique,
 	token text not null,
 	fecha date not null,
 	estado int not null,
@@ -20,7 +26,7 @@ create table usuario (
 
 /* insertar un registro */
 
-insert into usuario (nombre, correo, pass, token, fecha, estado) values ("oscar", "oscar@gmail.com", "123", 1, "2022/29/10","1");
+insert into usuario (nombre, correo, pass, token, fecha, estado) values ("oscar", "oscar@gmail.com", "123", 1, "2022/11/2","1");
 
 /* crear tabla tarea */
 
@@ -41,7 +47,7 @@ create table tarea (
 
 /* insertando tarea */
 
-insert into tarea (titulo, descripcion, finalizada, id_usuario, estado, fecha) values ( "task1", "this is the first task", 1, 1, 1, "2022/10/29" )
+insert into tarea (titulo, descripcion, finalizada, id_usuario, estado, fecha) values ( "task1", "this is the first task", 1, 1, 1, "2022/10/29" );
 ```
 
 3. Clonar la carpeta
