@@ -79,4 +79,4 @@ nodemon app
    recomendado POSTMAN u otro.
 
 8. Recomendar crear otro usuario, no usar el usuario creado en el paso 2 grasias.
-9. Cualquier duda del codigo porfavor comunicarse con el desarollador BACKEND.
+9. Cualquier duda del codigo porfavor comunicarse con el desarollador BACKEND...
