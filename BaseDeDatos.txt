@@ -20,7 +20,7 @@ create table usuario (
 
 /* insertar un registro */
 
-insert into usuario (nombre, correo, pass, token, fecha, estado) values ("oscar", "oscar@gmail.com", "123", 1, "2022/11/2","1");
+insert into usuario (nombre, correo, pass, token, fecha, estado) values ("oscar", "oscar@gmail.com", "12345", 1, "2022/11/2","1");
 
 /* crear tabla tarea */
 

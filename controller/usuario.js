@@ -290,7 +290,7 @@ const putUser = async (req, res = response) => {
                 }else{
                 
                     return res.status(401).json({
-                        msg: 'El token no pertenece al usuario'
+                        msg: `El token no pertenece al usuario con id ${id}`
                     });
                 
                 }
@@ -367,7 +367,7 @@ const deleteUser = async (req, res = response) => {
                 }else{
 
                     return res.status(401).json({
-                        msg: 'El token no pertenece al usuario'
+                        msg: `El token no pertenece al usuario con id ${id}`
                     });
 
                 }

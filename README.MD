@@ -74,6 +74,8 @@ npm install
 nodemon app
 ```
 
-Porfavor siga los pasos que se les mensiono de lo contrario no funcionara el programa grasias
-ahora puede hacer pruebas de error o regitrar otros usuarios, hacer login etc. con algun programa,
-recomendado POSTMAN u otro.
+7. Porfavor siga los pasos que se les mensiono de lo contrario no funcionara el programa grasias
+   ahora puede hacer pruebas de error o registrar otros usuarios, hacer login etc. con algun programa,
+   recomendado POSTMAN u otro.
+
+8. Recomendar crear otro usuario para fines de prueba grasias.

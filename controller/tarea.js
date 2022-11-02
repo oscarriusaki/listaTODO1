@@ -181,7 +181,7 @@ const putTarea = async (req, res = response) => {
                 }else{
                     
                     return res.status(401).json({
-                        msg: 'El token no pertenece al usuario'
+                        msg: `El token no pertenece al usuario con id ${usuario_logueado}`
                     });
 
                 }
@@ -255,7 +255,7 @@ const deleteTarea = async (req, res = response) => {
                 }else{
                 
                     return res.status(401).json({
-                        msg: 'El token no pertenece al usuario'
+                        msg: `El token no pertenece al usuario con id ${usuario_logueado}`
                     });
                 
                 }
