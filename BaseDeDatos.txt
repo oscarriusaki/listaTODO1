@@ -1,5 +1,5 @@
 /* crear la base de datos */
-create database gestion;
+create database gestionar;
 
 /* crear las tablas */
 
