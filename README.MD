@@ -57,6 +57,11 @@ git clone https://github.com/oscarriusaki/listaTODO1.git
 ```
 
 4. Con la terminal ingresar dentro de la carpeta clonada
+
+```
+cd listaTODO1
+```
+
 5. Para descargar los packetes en la terminal escribir
 
 ```
