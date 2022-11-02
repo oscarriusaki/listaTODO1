@@ -24,5 +24,5 @@ create table tarea (
 /* Hacer algunos registros */
 /* para formato de la fecha es y-m-d */
 
-insert into usuario (name, email, pass, date_time) values ('oscar', 'oscar@gmail.com', '12345');  
+insert into usuario (name, email, pass, date_time) values ('oscar', 'oscar@gmail.com', '12345','2022/11/2');  
 insert into tarea (name, user_id, description) values ('tarea1', 1, 'base de datos');
