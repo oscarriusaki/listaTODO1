@@ -24,9 +24,6 @@ create table usuario (
 
 );
 
-/* insertar un registro */
-
-insert into usuario (nombre, correo, pass, token, fecha, estado) values ("oscar", "oscar@gmail.com", "12345", 1, "2022/11/2","1");
 
 /* crear tabla tarea */
 
@@ -45,9 +42,9 @@ create table tarea (
 
 );
 
-/* insertando tarea */
 
-insert into tarea (titulo, descripcion, finalizada, id_usuario, estado, fecha) values ( "task1", "this is the first task", 1, 1, 1, "2022/10/29" );
+/* FORMATO FECHA YY/MM/DD */
+
 ```
 
 3. Clonar la carpeta
@@ -78,5 +75,4 @@ nodemon app
    ahora puede hacer pruebas de error o registrar otros usuarios, hacer login etc. con algun programa,
    recomendado POSTMAN u otro.
 
-8. Recomendar crear otro usuario, no usar el usuario creado en el paso 2 grasias.
-9. Cualquier duda del codigo porfavor comunicarse con el desarollador BACKEND...
+8. Cualquier duda del codigo porfavor comunicarse con el desarollador BACKEND...
