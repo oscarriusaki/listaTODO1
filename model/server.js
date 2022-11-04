@@ -47,7 +47,7 @@ class Server {
                 }else{
 
                     console.log('Connectado a la base de datos')
-
+                          
                 }
                 
             }catch(erre){
