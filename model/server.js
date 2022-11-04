@@ -55,7 +55,7 @@ class Server {
                 if(err.sqlMessage !== undefined){
                     console.log(err.sqlMessage);
                 }else{
-                    console.log('Error:500 no se conecto con la base de datos');
+                    console.log('Error:500 no se conecto con la base de datos vuelva a levantar el servidor');
                 }
 
             }
